@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+
 class CourseSession {
 	private String department;
 	private String number;
-	private int numberOfStudents = 0;
+	private ArrayList<Student> students = new ArrayList<Student>();
 	
 	CourseSession(String department, String number) {
 		this.department = department;
@@ -17,10 +19,14 @@ class CourseSession {
 	}
 	
 	void enroll(Student student) {
-		numberOfStudents = numberOfStudents + 1;
+		students.add(student);
 	}
 	
 	int getNumberOfStudents() {
-		return numberOfStudents;
+		return students.size();
+	}
+	
+	java.util.ArrayList<Student> getAllStudents() {
+		return students;
 	}
 }
