@@ -1,5 +1,7 @@
 public class StudentTest extends junit.framework.TestCase{
 	public void testCreate() {
-		new Student("Jane Doe");
+		Student student = new Student("Jane Doe");
+		String name = student.getName();
+		assertEquals("Jane Doe", name);
 	}
 }
