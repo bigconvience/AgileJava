@@ -1,3 +1,5 @@
+package studentinfo;
+
 public class AllTest {
 	public static junit.framework.TestSuite suite() {
 		junit.framework.TestSuite suite = new junit.framework.TestSuite();

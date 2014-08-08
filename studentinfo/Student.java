@@ -1,6 +1,7 @@
+package studentinfo;
 class Student {
 	private String mName;
-	Student(String name) {
+	Student(final String name) {
 		mName = name;
 	}
 	
