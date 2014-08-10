@@ -4,7 +4,7 @@ import junit.framework.*;
 
 public class DateUtilTest extends TestCase {
 	public void testDate() {
-		Date date = new DateUtil().createDate(2000, 1, 1);
+		Date date = DateUtil.createDate(2000, 1, 1);
 		Calendar calendar = new GregorianCalendar();
 		calendar.setTime(date);
 		assertEquals(2000, calendar.get(Calendar.YEAR));

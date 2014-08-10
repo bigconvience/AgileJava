@@ -6,41 +6,63 @@ public class CourseSession {
 	private String number;
 	private ArrayList<Student> students = new ArrayList<Student>();
 	private Date startDate;
-	
-	public CourseSession(String department, String number, Date startDate) {
+	private static int count;
+
+	private CourseSession(String department, String number, Date startDate) {
 		this.department = department;
 		this.number = number;
 		this.startDate = startDate;
+		CourseSession.incrementCount();
 	}
-	
+
 	String getDepartment() {
 		return department;
 	}
-	
+
 	String getNumber() {
 		return number;
 	}
-	
+
 	public void enroll(Student student) {
 		students.add(student);
 	}
-	
+
 	public ArrayList<Student> getAllStudents() {
 		return students;
 	}
-	
+
 	public int getNumberOfStudents() {
 		return students.size();
 	}
-	
+
+	public static void incrementCount() {
+		count += 1;
+	}
+
+	static void resetCount() {
+		count = 0;
+	}
+
+	static int getCount() {
+		return count;
+	}
+
+	public static CourseSession create(
+				String department,
+				String number,
+				Date date) {
+			incrementCount();
+		return new CourseSession(department, number, date);
+	}
+
 	Student get(int index) {
 		return students.get(index);
 	}
-	
+
 	Date getStartDate() {
 		return startDate;
 	}
-	
+
 	Date getEndDate() {
 		GregorianCalendar calendar = new GregorianCalendar();
 		calendar.setTime(startDate);
