@@ -1,7 +1,8 @@
-package studentinfo;
-class Student {
+package sis.studentinfo;
+
+public class Student {
 	private String mName;
-	Student(final String name) {
+	public Student(final String name) {
 		mName = name;
 	}
 	

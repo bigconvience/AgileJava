@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<project name="AgileJava" default="junittext" basedir=".">
+	<property name="junitJar" value="${basedir}\libs\junit-4.10.jar" />
+	<property name="src.dir" value="${basedir}\source" />
+	<property name="build.dir" value="${basedir}\classes" />
+	
+	<path id="classpath">
+		<pathelement location="${junitJar}" />
+		<pathelement location="${build.dir}" />
+	</path>
+	
+	<target name="init">
+		<mkdir dir="${build.dir}" />
+	</target>
+	
+	<target name="build" depends="init" description="build all">
+		<javac
+			srcdir="${src.dir}" destdir="${build.dir}"
+			source="1.5" 
+			deprecation="on" debug="on" optimize="off" includes="**">
+		<classpath refid="classpath" />
+		</javac>
+	</target>
+	
+	<target name="junittext" depends="build" description="run junittext">
+		<java classname="junit.textui.TestRunner" fork="yes">
+		<arg value="sis.AllTests" />
+		<classpath refid="classpath" />
+		</java>
+	</target>
+	
+	<target name="clean"> 
+		<delete dir="${build.dir}" />
+	</target>
+	<target name="rebuildAll" depends="clean,build" description="rebuild all"/>
+</project>

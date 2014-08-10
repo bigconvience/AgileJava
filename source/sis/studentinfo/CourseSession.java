@@ -1,18 +1,13 @@
-package studentinfo;
+package sis.studentinfo;
 import java.util.*;
 
-/**
-* Provides a representation of a single-semester
-* session of a specific university course.
-* @author Administrator
-*/
-class CourseSession {
+public class CourseSession {
 	private String department;
 	private String number;
 	private ArrayList<Student> students = new ArrayList<Student>();
 	private Date startDate;
 	
-	CourseSession(String department, String number, Date startDate) {
+	public CourseSession(String department, String number, Date startDate) {
 		this.department = department;
 		this.number = number;
 		this.startDate = startDate;
@@ -26,11 +21,15 @@ class CourseSession {
 		return number;
 	}
 	
-	void enroll(Student student) {
+	public void enroll(Student student) {
 		students.add(student);
 	}
 	
-	int getNumberOfStudents() {
+	public ArrayList<Student> getAllStudents() {
+		return students;
+	}
+	
+	public int getNumberOfStudents() {
 		return students.size();
 	}
 	
