@@ -75,8 +75,11 @@ public class CourseSession implements Comparable<CourseSession> {
 	void setNumberOfCredits(int numberOfCredits) {
 		this.numberOfCredits = numberOfCredits;
 	}
-	
+
 	public int compareTo(CourseSession that) {
-		return this.getDepartment().compareTo(that.getDepartment());
+		int compare = this.getDepartment().compareTo(that.getDepartment());
+		if (compare != 0)
+			return compare;
+		return this.getNumber().compareTo(that.getNumber());
 	}
 }
