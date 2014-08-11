@@ -7,6 +7,7 @@ public class AllTests {
    {
       TestSuite suite = new TestSuite();
       suite.addTestSuite(RosterReporterTest.class);
+	  suite.addTestSuite(CourseReportTest.class);
       return suite;
    }
 }

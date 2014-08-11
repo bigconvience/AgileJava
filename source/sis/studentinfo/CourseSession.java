@@ -1,7 +1,7 @@
 package sis.studentinfo;
 import java.util.*;
 
-public class CourseSession {
+public class CourseSession implements Comparable<CourseSession> {
 	private String department;
 	private String number;
 	private ArrayList<Student> students = new ArrayList<Student>();
@@ -74,5 +74,9 @@ public class CourseSession {
 
 	void setNumberOfCredits(int numberOfCredits) {
 		this.numberOfCredits = numberOfCredits;
+	}
+	
+	public int compareTo(CourseSession that) {
+		return this.getDepartment().compareTo(that.getDepartment());
 	}
 }
