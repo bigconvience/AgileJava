@@ -1,0 +1,58 @@
+Compiled from "IntegerPair.java"
+public class generic.bound.IntegerPair<T extends java.lang.Integer> {
+  public generic.bound.IntegerPair();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aconst_null
+       6: putfield      #2                  // Field first:Ljava/lang/Integer;
+       9: aload_0
+      10: aconst_null
+      11: putfield      #3                  // Field second:Ljava/lang/Integer;
+      14: return
+
+  public generic.bound.IntegerPair(T, T);
+    descriptor: (Ljava/lang/Integer;Ljava/lang/Integer;)V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #2                  // Field first:Ljava/lang/Integer;
+       9: aload_0
+      10: aload_2
+      11: putfield      #3                  // Field second:Ljava/lang/Integer;
+      14: return
+
+  public T getFirst();
+    descriptor: ()Ljava/lang/Integer;
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field first:Ljava/lang/Integer;
+       4: areturn
+
+  public T getSecond();
+    descriptor: ()Ljava/lang/Integer;
+    Code:
+       0: aload_0
+       1: getfield      #3                  // Field second:Ljava/lang/Integer;
+       4: areturn
+
+  public void setFirst(T);
+    descriptor: (Ljava/lang/Integer;)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #2                  // Field first:Ljava/lang/Integer;
+       5: return
+
+  public void setSecond(T);
+    descriptor: (Ljava/lang/Integer;)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #3                  // Field second:Ljava/lang/Integer;
+       5: return
+}

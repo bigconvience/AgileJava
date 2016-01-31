@@ -1,3 +1,5 @@
+# Compiled source #
+###################
 *.com
 *.class
 *.dll
@@ -8,6 +10,8 @@
 *.apk
 *.ap_
 
+# Compile work directory #
+##########################
 bin/
 gen/
 obj/
@@ -16,7 +20,14 @@ out/
 proguard/
 proguard_logs/
 build/
+target/
 
+# Jar #
+###########
+thirdparty.jar
+
+# ide #
+#######
 project.properties
 build.xml
 .loadpath
@@ -38,3 +49,36 @@ local.properties
 .idea/
 .gradle/
 
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+# *.7z
+# *.dmg
+# *.gz
+# *.iso
+# *.jar
+# *.rar
+# *.tar
+# *.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# 特殊需求
+#######
+presentation/src/main/assets/fonts/IconFont.ttf

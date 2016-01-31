@@ -1,0 +1,129 @@
+Classfile /d:/demos/java_demo/src/generic/basic/Pair.class
+  Last modified 2016-1-30; size 788 bytes
+  MD5 checksum 86247f13b926f77e7cc662fff7a991de
+  Compiled from "Pair.java"
+public class basic.Pair<T extends java.lang.Object> extends java.lang.Object
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #5.#28         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #4.#29         // basic/Pair.first:Ljava/lang/Object;
+   #3 = Fieldref           #4.#30         // basic/Pair.second:Ljava/lang/Object;
+   #4 = Class              #31            // basic/Pair
+   #5 = Class              #32            // java/lang/Object
+   #6 = Utf8               first
+   #7 = Utf8               Ljava/lang/Object;
+   #8 = Utf8               Signature
+   #9 = Utf8               TT;
+  #10 = Utf8               second
+  #11 = Utf8               <init>
+  #12 = Utf8               ()V
+  #13 = Utf8               Code
+  #14 = Utf8               LineNumberTable
+  #15 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)V
+  #16 = Utf8               (TT;TT;)V
+  #17 = Utf8               getFirst
+  #18 = Utf8               ()Ljava/lang/Object;
+  #19 = Utf8               ()TT;
+  #20 = Utf8               getSecond
+  #21 = Utf8               setFirst
+  #22 = Utf8               (Ljava/lang/Object;)V
+  #23 = Utf8               (TT;)V
+  #24 = Utf8               setSecond
+  #25 = Utf8               <T:Ljava/lang/Object;>Ljava/lang/Object;
+  #26 = Utf8               SourceFile
+  #27 = Utf8               Pair.java
+  #28 = NameAndType        #11:#12        // "<init>":()V
+  #29 = NameAndType        #6:#7          // first:Ljava/lang/Object;
+  #30 = NameAndType        #10:#7         // second:Ljava/lang/Object;
+  #31 = Utf8               basic/Pair
+  #32 = Utf8               java/lang/Object
+{
+  public basic.Pair();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aconst_null
+         6: putfield      #2                  // Field first:Ljava/lang/Object;
+         9: aload_0
+        10: aconst_null
+        11: putfield      #3                  // Field second:Ljava/lang/Object;
+        14: return
+      LineNumberTable:
+        line 9: 0
+
+  public basic.Pair(T, T);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #2                  // Field first:Ljava/lang/Object;
+         9: aload_0
+        10: aload_2
+        11: putfield      #3                  // Field second:Ljava/lang/Object;
+        14: return
+      LineNumberTable:
+        line 10: 0
+    Signature: #16                          // (TT;TT;)V
+
+  public T getFirst();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #2                  // Field first:Ljava/lang/Object;
+         4: areturn
+      LineNumberTable:
+        line 12: 0
+    Signature: #19                          // ()TT;
+
+  public T getSecond();
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #3                  // Field second:Ljava/lang/Object;
+         4: areturn
+      LineNumberTable:
+        line 13: 0
+    Signature: #19                          // ()TT;
+
+  public void setFirst(T);
+    descriptor: (Ljava/lang/Object;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #2                  // Field first:Ljava/lang/Object;
+         5: return
+      LineNumberTable:
+        line 15: 0
+    Signature: #23                          // (TT;)V
+
+  public void setSecond(T);
+    descriptor: (Ljava/lang/Object;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #3                  // Field second:Ljava/lang/Object;
+         5: return
+      LineNumberTable:
+        line 16: 0
+    Signature: #23                          // (TT;)V
+}
+Signature: #25                          // <T:Ljava/lang/Object;>Ljava/lang/Object;
+SourceFile: "Pair.java"
