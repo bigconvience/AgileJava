@@ -1,0 +1,22 @@
+Compiled from "MultiBounds.java"
+class generic.bound.MultiBounds$D<T extends generic.bound.MultiBounds$A & generic.bound.MultiBounds$B & generic.bound.MultiBounds$C> {
+  generic.bound.MultiBounds$D();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public void d(T);
+    descriptor: (Lgeneric/bound/MultiBounds$A;)V
+    Code:
+       0: aload_1
+       1: invokevirtual #2                  // Method generic/bound/MultiBounds$A.a:()V
+       4: aload_1
+       5: checkcast     #3                  // class generic/bound/MultiBounds$B
+       8: invokeinterface #4,  1            // InterfaceMethod generic/bound/MultiBounds$B.b:()V
+      13: aload_1
+      14: checkcast     #5                  // class generic/bound/MultiBounds$C
+      17: invokeinterface #6,  1            // InterfaceMethod generic/bound/MultiBounds$C.c:()V
+      22: return
+}
