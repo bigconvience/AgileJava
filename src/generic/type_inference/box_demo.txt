@@ -1,0 +1,235 @@
+Classfile /Users/jiangbenpeng/Documents/demos/java_note/src/generic/type_inference/BoxDemo.class
+  Last modified Feb 7, 2016; size 1642 bytes
+  MD5 checksum 66f9c745940e31c324201d1581d95b61
+  Compiled from "BoxDemo.java"
+public class generic.type_inference.BoxDemo
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Methodref          #27.#45       // java/lang/Object."<init>":()V
+    #2 = Class              #46           // generic/type_inference/Box
+    #3 = Methodref          #2.#45        // generic/type_inference/Box."<init>":()V
+    #4 = Methodref          #2.#47        // generic/type_inference/Box.set:(Ljava/lang/Object;)V
+    #5 = InterfaceMethodref #48.#49       // java/util/List.add:(Ljava/lang/Object;)Z
+    #6 = InterfaceMethodref #48.#50       // java/util/List.iterator:()Ljava/util/Iterator;
+    #7 = InterfaceMethodref #51.#52       // java/util/Iterator.hasNext:()Z
+    #8 = InterfaceMethodref #51.#53       // java/util/Iterator.next:()Ljava/lang/Object;
+    #9 = Methodref          #2.#54        // generic/type_inference/Box.get:()Ljava/lang/Object;
+   #10 = Fieldref           #55.#56       // java/lang/System.out:Ljava/io/PrintStream;
+   #11 = Class              #57           // java/lang/StringBuilder
+   #12 = Methodref          #11.#45       // java/lang/StringBuilder."<init>":()V
+   #13 = String             #58           // Box #
+   #14 = Methodref          #11.#59       // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #15 = Methodref          #11.#60       // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+   #16 = String             #61           //  contains [
+   #17 = Methodref          #27.#62       // java/lang/Object.toString:()Ljava/lang/String;
+   #18 = String             #63           // ]
+   #19 = Methodref          #11.#62       // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #20 = Methodref          #64.#65       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #21 = Class              #66           // java/util/ArrayList
+   #22 = Methodref          #21.#45       // java/util/ArrayList."<init>":()V
+   #23 = Methodref          #67.#68       // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #24 = Methodref          #26.#69       // generic/type_inference/BoxDemo.addBox:(Ljava/lang/Object;Ljava/util/List;)V
+   #25 = Methodref          #26.#70       // generic/type_inference/BoxDemo.outputBoxes:(Ljava/util/List;)V
+   #26 = Class              #71           // generic/type_inference/BoxDemo
+   #27 = Class              #72           // java/lang/Object
+   #28 = Utf8               <init>
+   #29 = Utf8               ()V
+   #30 = Utf8               Code
+   #31 = Utf8               LineNumberTable
+   #32 = Utf8               addBox
+   #33 = Utf8               (Ljava/lang/Object;Ljava/util/List;)V
+   #34 = Utf8               Signature
+   #35 = Utf8               <U:Ljava/lang/Object;>(TU;Ljava/util/List<Lgeneric/type_inference/Box<TU;>;>;)V
+   #36 = Utf8               outputBoxes
+   #37 = Utf8               (Ljava/util/List;)V
+   #38 = Utf8               StackMapTable
+   #39 = Class              #73           // java/util/Iterator
+   #40 = Utf8               <U:Ljava/lang/Object;>(Ljava/util/List<Lgeneric/type_inference/Box<TU;>;>;)V
+   #41 = Utf8               main
+   #42 = Utf8               ([Ljava/lang/String;)V
+   #43 = Utf8               SourceFile
+   #44 = Utf8               BoxDemo.java
+   #45 = NameAndType        #28:#29       // "<init>":()V
+   #46 = Utf8               generic/type_inference/Box
+   #47 = NameAndType        #74:#75       // set:(Ljava/lang/Object;)V
+   #48 = Class              #76           // java/util/List
+   #49 = NameAndType        #77:#78       // add:(Ljava/lang/Object;)Z
+   #50 = NameAndType        #79:#80       // iterator:()Ljava/util/Iterator;
+   #51 = Class              #73           // java/util/Iterator
+   #52 = NameAndType        #81:#82       // hasNext:()Z
+   #53 = NameAndType        #83:#84       // next:()Ljava/lang/Object;
+   #54 = NameAndType        #85:#84       // get:()Ljava/lang/Object;
+   #55 = Class              #86           // java/lang/System
+   #56 = NameAndType        #87:#88       // out:Ljava/io/PrintStream;
+   #57 = Utf8               java/lang/StringBuilder
+   #58 = Utf8               Box #
+   #59 = NameAndType        #89:#90       // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #60 = NameAndType        #89:#91       // append:(I)Ljava/lang/StringBuilder;
+   #61 = Utf8                contains [
+   #62 = NameAndType        #92:#93       // toString:()Ljava/lang/String;
+   #63 = Utf8               ]
+   #64 = Class              #94           // java/io/PrintStream
+   #65 = NameAndType        #95:#96       // println:(Ljava/lang/String;)V
+   #66 = Utf8               java/util/ArrayList
+   #67 = Class              #97           // java/lang/Integer
+   #68 = NameAndType        #98:#99       // valueOf:(I)Ljava/lang/Integer;
+   #69 = NameAndType        #32:#33       // addBox:(Ljava/lang/Object;Ljava/util/List;)V
+   #70 = NameAndType        #36:#37       // outputBoxes:(Ljava/util/List;)V
+   #71 = Utf8               generic/type_inference/BoxDemo
+   #72 = Utf8               java/lang/Object
+   #73 = Utf8               java/util/Iterator
+   #74 = Utf8               set
+   #75 = Utf8               (Ljava/lang/Object;)V
+   #76 = Utf8               java/util/List
+   #77 = Utf8               add
+   #78 = Utf8               (Ljava/lang/Object;)Z
+   #79 = Utf8               iterator
+   #80 = Utf8               ()Ljava/util/Iterator;
+   #81 = Utf8               hasNext
+   #82 = Utf8               ()Z
+   #83 = Utf8               next
+   #84 = Utf8               ()Ljava/lang/Object;
+   #85 = Utf8               get
+   #86 = Utf8               java/lang/System
+   #87 = Utf8               out
+   #88 = Utf8               Ljava/io/PrintStream;
+   #89 = Utf8               append
+   #90 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #91 = Utf8               (I)Ljava/lang/StringBuilder;
+   #92 = Utf8               toString
+   #93 = Utf8               ()Ljava/lang/String;
+   #94 = Utf8               java/io/PrintStream
+   #95 = Utf8               println
+   #96 = Utf8               (Ljava/lang/String;)V
+   #97 = Utf8               java/lang/Integer
+   #98 = Utf8               valueOf
+   #99 = Utf8               (I)Ljava/lang/Integer;
+{
+  public generic.type_inference.BoxDemo();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 9: 0
+
+  public static <U extends java.lang.Object> void addBox(U, java.util.List<generic.type_inference.Box<U>>);
+    descriptor: (Ljava/lang/Object;Ljava/util/List;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=2
+         0: new           #2                  // class generic/type_inference/Box
+         3: dup
+         4: invokespecial #3                  // Method generic/type_inference/Box."<init>":()V
+         7: astore_2
+         8: aload_2
+         9: aload_0
+        10: invokevirtual #4                  // Method generic/type_inference/Box.set:(Ljava/lang/Object;)V
+        13: aload_1
+        14: aload_2
+        15: invokeinterface #5,  2            // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        20: pop
+        21: return
+      LineNumberTable:
+        line 12: 0
+        line 13: 8
+        line 14: 13
+        line 15: 21
+    Signature: #35                          // <U:Ljava/lang/Object;>(TU;Ljava/util/List<Lgeneric/type_inference/Box<TU;>;>;)V
+
+  public static <U extends java.lang.Object> void outputBoxes(java.util.List<generic.type_inference.Box<U>>);
+    descriptor: (Ljava/util/List;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=5, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: aload_0
+         3: invokeinterface #6,  1            // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+         8: astore_2
+         9: aload_2
+        10: invokeinterface #7,  1            // InterfaceMethod java/util/Iterator.hasNext:()Z
+        15: ifeq          83
+        18: aload_2
+        19: invokeinterface #8,  1            // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        24: checkcast     #2                  // class generic/type_inference/Box
+        27: astore_3
+        28: aload_3
+        29: invokevirtual #9                  // Method generic/type_inference/Box.get:()Ljava/lang/Object;
+        32: astore        4
+        34: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        37: new           #11                 // class java/lang/StringBuilder
+        40: dup
+        41: invokespecial #12                 // Method java/lang/StringBuilder."<init>":()V
+        44: ldc           #13                 // String Box #
+        46: invokevirtual #14                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        49: iload_1
+        50: invokevirtual #15                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        53: ldc           #16                 // String  contains [
+        55: invokevirtual #14                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        58: aload         4
+        60: invokevirtual #17                 // Method java/lang/Object.toString:()Ljava/lang/String;
+        63: invokevirtual #14                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        66: ldc           #18                 // String ]
+        68: invokevirtual #14                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        71: invokevirtual #19                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        74: invokevirtual #20                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        77: iinc          1, 1
+        80: goto          9
+        83: return
+      LineNumberTable:
+        line 18: 0
+        line 19: 2
+        line 20: 28
+        line 21: 34
+        line 22: 60
+        line 21: 74
+        line 23: 77
+        line 24: 80
+        line 25: 83
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 9
+          locals = [ int, class java/util/Iterator ]
+        frame_type = 250 /* chop */
+          offset_delta = 73
+    Signature: #40                          // <U:Ljava/lang/Object;>(Ljava/util/List<Lgeneric/type_inference/Box<TU;>;>;)V
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #21                 // class java/util/ArrayList
+         3: dup
+         4: invokespecial #22                 // Method java/util/ArrayList."<init>":()V
+         7: astore_1
+         8: bipush        10
+        10: invokestatic  #23                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        13: aload_1
+        14: invokestatic  #24                 // Method addBox:(Ljava/lang/Object;Ljava/util/List;)V
+        17: bipush        20
+        19: invokestatic  #23                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        22: aload_1
+        23: invokestatic  #24                 // Method addBox:(Ljava/lang/Object;Ljava/util/List;)V
+        26: bipush        30
+        28: invokestatic  #23                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        31: aload_1
+        32: invokestatic  #24                 // Method addBox:(Ljava/lang/Object;Ljava/util/List;)V
+        35: aload_1
+        36: invokestatic  #25                 // Method outputBoxes:(Ljava/util/List;)V
+        39: return
+      LineNumberTable:
+        line 28: 0
+        line 30: 8
+        line 31: 17
+        line 32: 26
+        line 33: 35
+        line 34: 39
+}
+SourceFile: "BoxDemo.java"
