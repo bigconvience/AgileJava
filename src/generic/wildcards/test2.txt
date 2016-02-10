@@ -1,0 +1,71 @@
+Classfile /Users/jiangbenpeng/Documents/demos/java_note/src/generic/wildcards/Test2.class
+  Last modified Feb 10, 2016; size 556 bytes
+  MD5 checksum 08c9d178753590ff1f0b82e09307979d
+  Compiled from "Test2.java"
+public class generic.wildcards.Test2
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #9.#19         // java/lang/Object."<init>":()V
+   #2 = Class              #20            // java/util/ArrayList
+   #3 = Methodref          #2.#19         // java/util/ArrayList."<init>":()V
+   #4 = Fieldref           #21.#22        // java/lang/System.out:Ljava/io/PrintStream;
+   #5 = InterfaceMethodref #23.#24        // java/util/List.size:()I
+   #6 = Methodref          #25.#26        // java/io/PrintStream.println:(I)V
+   #7 = Methodref          #8.#27         // generic/wildcards/Test2.sub:()V
+   #8 = Class              #28            // generic/wildcards/Test2
+   #9 = Class              #29            // java/lang/Object
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = Utf8               Code
+  #13 = Utf8               LineNumberTable
+  #14 = Utf8               sub
+  #15 = Utf8               main
+  #16 = Utf8               ([Ljava/lang/String;)V
+  #17 = Utf8               SourceFile
+  #18 = Utf8               Test2.java
+  #19 = NameAndType        #10:#11        // "<init>":()V
+  #20 = Utf8               java/util/ArrayList
+  #21 = Class              #30            // java/lang/System
+  #22 = NameAndType        #31:#32        // out:Ljava/io/PrintStream;
+  #23 = Class              #33            // java/util/List
+  #24 = NameAndType        #34:#35        // size:()I
+  #25 = Class              #36            // java/io/PrintStream
+  #26 = NameAndType        #37:#38        // println:(I)V
+  #27 = NameAndType        #14:#11        // sub:()V
+  #28 = Utf8               generic/wildcards/Test2
+  #29 = Utf8               java/lang/Object
+  #30 = Utf8               java/lang/System
+  #31 = Utf8               out
+  #32 = Utf8               Ljava/io/PrintStream;
+  #33 = Utf8               java/util/List
+  #34 = Utf8               size
+  #35 = Utf8               ()I
+  #36 = Utf8               java/io/PrintStream
+  #37 = Utf8               println
+  #38 = Utf8               (I)V
+{
+  public generic.wildcards.Test2();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 12: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: invokestatic  #7                  // Method sub:()V
+         3: return
+      LineNumberTable:
+        line 20: 0
+        line 21: 3
+}
+SourceFile: "Test2.java"

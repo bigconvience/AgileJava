@@ -1,0 +1,82 @@
+Classfile /Users/jiangbenpeng/Documents/demos/java_note/src/generic/wildcards/LowerBound.class
+  Last modified Feb 10, 2016; size 546 bytes
+  MD5 checksum 0875e20af9d3b13c0e181d912522de05
+  Compiled from "LowerBound.java"
+public class generic.wildcards.LowerBound
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #5.#17         // java/lang/Object."<init>":()V
+   #2 = Methodref          #18.#19        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #3 = InterfaceMethodref #20.#21        // java/util/List.add:(Ljava/lang/Object;)Z
+   #4 = Class              #22            // generic/wildcards/LowerBound
+   #5 = Class              #23            // java/lang/Object
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = Utf8               Code
+   #9 = Utf8               LineNumberTable
+  #10 = Utf8               addNumbers
+  #11 = Utf8               (Ljava/util/List;)V
+  #12 = Utf8               StackMapTable
+  #13 = Utf8               Signature
+  #14 = Utf8               (Ljava/util/List<-Ljava/lang/Integer;>;)V
+  #15 = Utf8               SourceFile
+  #16 = Utf8               LowerBound.java
+  #17 = NameAndType        #6:#7          // "<init>":()V
+  #18 = Class              #24            // java/lang/Integer
+  #19 = NameAndType        #25:#26        // valueOf:(I)Ljava/lang/Integer;
+  #20 = Class              #27            // java/util/List
+  #21 = NameAndType        #28:#29        // add:(Ljava/lang/Object;)Z
+  #22 = Utf8               generic/wildcards/LowerBound
+  #23 = Utf8               java/lang/Object
+  #24 = Utf8               java/lang/Integer
+  #25 = Utf8               valueOf
+  #26 = Utf8               (I)Ljava/lang/Integer;
+  #27 = Utf8               java/util/List
+  #28 = Utf8               add
+  #29 = Utf8               (Ljava/lang/Object;)Z
+{
+  public generic.wildcards.LowerBound();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 11: 0
+
+  public static void addNumbers(java.util.List<? super java.lang.Integer>);
+    descriptor: (Ljava/util/List;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: iconst_1
+         1: istore_1
+         2: iload_1
+         3: bipush        10
+         5: if_icmpgt     25
+         8: aload_0
+         9: iload_1
+        10: invokestatic  #2                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        13: invokeinterface #3,  2            // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        18: pop
+        19: iinc          1, 1
+        22: goto          2
+        25: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 8
+        line 13: 19
+        line 16: 25
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 22
+    Signature: #14                          // (Ljava/util/List<-Ljava/lang/Integer;>;)V
+}
+SourceFile: "LowerBound.java"

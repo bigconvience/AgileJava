@@ -13,28 +13,22 @@ import java.util.Scanner;
  */
 public class ArraySum {
     public static void main(String[] args) {
-
         Scanner stdin = new Scanner(System.in);
-        int count;
+
         String line = stdin.nextLine();
-        count = Integer.valueOf(line);
-        int[] triple = new int[2 * count];
-
+        int count = Integer.valueOf(line);
         for (int i = 0; i < count; i++) {
+            StringBuilder stringBuilder = new StringBuilder();
 
-            line = stdin.nextLine();
-            String[] tokens = line.split(" ");
-            triple[2 * i] = Integer.valueOf(tokens[i]);
-            triple[2 * i + 1] = Integer.valueOf(tokens[count - i - 1]);
+            for (int j = 0; j <  count - i - 1; j++) {
+                stringBuilder.append(" ");
+            }
+            for (int j = 0; j < i + 1; j++) {
+                stringBuilder.append("#");
+            }
+            System.out.println(stringBuilder.toString());
         }
 
-        int sum1 = 0;
-        int sum2 = 0;
-        for (int i = 0; i < count; i++) {
-            sum1 += triple[2 * i];
-            sum2 += triple[2 * i + 1];
-        }
 
-        System.out.println(Math.abs(sum1 - sum2));
     }
 }

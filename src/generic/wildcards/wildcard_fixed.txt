@@ -1,0 +1,17 @@
+Compiled from "WildcardFixed.java"
+public class generic.wildcards.WildcardFixed {
+  public generic.wildcards.WildcardFixed();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  void foo(java.util.List<?>);
+    descriptor: (Ljava/util/List;)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #2                  // Method fooHelper:(Ljava/util/List;)V
+       5: return
+}
