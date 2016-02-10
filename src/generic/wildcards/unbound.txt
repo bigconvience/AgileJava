@@ -1,0 +1,249 @@
+Classfile /Users/jiangbenpeng/Documents/demos/java_note/src/generic/wildcards/UnBound.class
+  Last modified Feb 10, 2016; size 1499 bytes
+  MD5 checksum 8d97e346a394456495b752ae26536bf8
+  Compiled from "UnBound.java"
+public class generic.wildcards.UnBound
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #24.#41        // java/lang/Object."<init>":()V
+   #2 = InterfaceMethodref #42.#43        // java/util/List.iterator:()Ljava/util/Iterator;
+   #3 = InterfaceMethodref #44.#45        // java/util/Iterator.hasNext:()Z
+   #4 = InterfaceMethodref #44.#46        // java/util/Iterator.next:()Ljava/lang/Object;
+   #5 = Fieldref           #47.#48        // java/lang/System.out:Ljava/io/PrintStream;
+   #6 = Class              #49            // java/lang/StringBuilder
+   #7 = Methodref          #6.#41         // java/lang/StringBuilder."<init>":()V
+   #8 = Methodref          #6.#50         // java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   #9 = String             #51            //
+  #10 = Methodref          #6.#52         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #11 = Methodref          #6.#53         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #12 = Methodref          #54.#55        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #13 = Methodref          #54.#56        // java/io/PrintStream.println:()V
+  #14 = Methodref          #54.#57        // java/io/PrintStream.print:(Ljava/lang/String;)V
+  #15 = Class              #58            // java/lang/Integer
+  #16 = Methodref          #15.#59        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #17 = Methodref          #60.#61        // java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+  #18 = Class              #62            // java/lang/String
+  #19 = String             #63            // one
+  #20 = String             #64            // two
+  #21 = String             #65            // three
+  #22 = Methodref          #23.#66        // generic/wildcards/UnBound.printList:(Ljava/util/List;)V
+  #23 = Class              #67            // generic/wildcards/UnBound
+  #24 = Class              #68            // java/lang/Object
+  #25 = Utf8               <init>
+  #26 = Utf8               ()V
+  #27 = Utf8               Code
+  #28 = Utf8               LineNumberTable
+  #29 = Utf8               printList1
+  #30 = Utf8               (Ljava/util/List;)V
+  #31 = Utf8               StackMapTable
+  #32 = Class              #69            // java/util/Iterator
+  #33 = Utf8               Signature
+  #34 = Utf8               (Ljava/util/List<Ljava/lang/Object;>;)V
+  #35 = Utf8               printList
+  #36 = Utf8               (Ljava/util/List<*>;)V
+  #37 = Utf8               main
+  #38 = Utf8               ([Ljava/lang/String;)V
+  #39 = Utf8               SourceFile
+  #40 = Utf8               UnBound.java
+  #41 = NameAndType        #25:#26        // "<init>":()V
+  #42 = Class              #70            // java/util/List
+  #43 = NameAndType        #71:#72        // iterator:()Ljava/util/Iterator;
+  #44 = Class              #69            // java/util/Iterator
+  #45 = NameAndType        #73:#74        // hasNext:()Z
+  #46 = NameAndType        #75:#76        // next:()Ljava/lang/Object;
+  #47 = Class              #77            // java/lang/System
+  #48 = NameAndType        #78:#79        // out:Ljava/io/PrintStream;
+  #49 = Utf8               java/lang/StringBuilder
+  #50 = NameAndType        #80:#81        // append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #51 = Utf8
+  #52 = NameAndType        #80:#82        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #53 = NameAndType        #83:#84        // toString:()Ljava/lang/String;
+  #54 = Class              #85            // java/io/PrintStream
+  #55 = NameAndType        #86:#87        // println:(Ljava/lang/String;)V
+  #56 = NameAndType        #86:#26        // println:()V
+  #57 = NameAndType        #88:#87        // print:(Ljava/lang/String;)V
+  #58 = Utf8               java/lang/Integer
+  #59 = NameAndType        #89:#90        // valueOf:(I)Ljava/lang/Integer;
+  #60 = Class              #91            // java/util/Arrays
+  #61 = NameAndType        #92:#93        // asList:([Ljava/lang/Object;)Ljava/util/List;
+  #62 = Utf8               java/lang/String
+  #63 = Utf8               one
+  #64 = Utf8               two
+  #65 = Utf8               three
+  #66 = NameAndType        #35:#30        // printList:(Ljava/util/List;)V
+  #67 = Utf8               generic/wildcards/UnBound
+  #68 = Utf8               java/lang/Object
+  #69 = Utf8               java/util/Iterator
+  #70 = Utf8               java/util/List
+  #71 = Utf8               iterator
+  #72 = Utf8               ()Ljava/util/Iterator;
+  #73 = Utf8               hasNext
+  #74 = Utf8               ()Z
+  #75 = Utf8               next
+  #76 = Utf8               ()Ljava/lang/Object;
+  #77 = Utf8               java/lang/System
+  #78 = Utf8               out
+  #79 = Utf8               Ljava/io/PrintStream;
+  #80 = Utf8               append
+  #81 = Utf8               (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #82 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #83 = Utf8               toString
+  #84 = Utf8               ()Ljava/lang/String;
+  #85 = Utf8               java/io/PrintStream
+  #86 = Utf8               println
+  #87 = Utf8               (Ljava/lang/String;)V
+  #88 = Utf8               print
+  #89 = Utf8               valueOf
+  #90 = Utf8               (I)Ljava/lang/Integer;
+  #91 = Utf8               java/util/Arrays
+  #92 = Utf8               asList
+  #93 = Utf8               ([Ljava/lang/Object;)Ljava/util/List;
+{
+  public generic.wildcards.UnBound();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 12: 0
+
+  public static void printList1(java.util.List<java.lang.Object>);
+    descriptor: (Ljava/util/List;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: aload_0
+         1: invokeinterface #2,  1            // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+         6: astore_1
+         7: aload_1
+         8: invokeinterface #3,  1            // InterfaceMethod java/util/Iterator.hasNext:()Z
+        13: ifeq          51
+        16: aload_1
+        17: invokeinterface #4,  1            // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        22: astore_2
+        23: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        26: new           #6                  // class java/lang/StringBuilder
+        29: dup
+        30: invokespecial #7                  // Method java/lang/StringBuilder."<init>":()V
+        33: aload_2
+        34: invokevirtual #8                  // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+        37: ldc           #9                  // String
+        39: invokevirtual #10                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        42: invokevirtual #11                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        45: invokevirtual #12                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        48: goto          7
+        51: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        54: invokevirtual #13                 // Method java/io/PrintStream.println:()V
+        57: return
+      LineNumberTable:
+        line 14: 0
+        line 15: 23
+        line 16: 51
+        line 17: 57
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 7
+          locals = [ class java/util/Iterator ]
+        frame_type = 250 /* chop */
+          offset_delta = 43
+    Signature: #34                          // (Ljava/util/List<Ljava/lang/Object;>;)V
+
+  public static void printList(java.util.List<?>);
+    descriptor: (Ljava/util/List;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: aload_0
+         1: invokeinterface #2,  1            // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+         6: astore_1
+         7: aload_1
+         8: invokeinterface #3,  1            // InterfaceMethod java/util/Iterator.hasNext:()Z
+        13: ifeq          51
+        16: aload_1
+        17: invokeinterface #4,  1            // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        22: astore_2
+        23: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        26: new           #6                  // class java/lang/StringBuilder
+        29: dup
+        30: invokespecial #7                  // Method java/lang/StringBuilder."<init>":()V
+        33: aload_2
+        34: invokevirtual #8                  // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+        37: ldc           #9                  // String
+        39: invokevirtual #10                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        42: invokevirtual #11                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        45: invokevirtual #14                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        48: goto          7
+        51: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        54: invokevirtual #13                 // Method java/io/PrintStream.println:()V
+        57: return
+      LineNumberTable:
+        line 21: 0
+        line 22: 23
+        line 23: 51
+        line 24: 57
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 7
+          locals = [ class java/util/Iterator ]
+        frame_type = 250 /* chop */
+          offset_delta = 43
+    Signature: #36                          // (Ljava/util/List<*>;)V
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=3, args_size=1
+         0: iconst_3
+         1: anewarray     #15                 // class java/lang/Integer
+         4: dup
+         5: iconst_0
+         6: iconst_1
+         7: invokestatic  #16                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        10: aastore
+        11: dup
+        12: iconst_1
+        13: iconst_2
+        14: invokestatic  #16                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        17: aastore
+        18: dup
+        19: iconst_2
+        20: iconst_3
+        21: invokestatic  #16                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        24: aastore
+        25: invokestatic  #17                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+        28: astore_1
+        29: iconst_3
+        30: anewarray     #18                 // class java/lang/String
+        33: dup
+        34: iconst_0
+        35: ldc           #19                 // String one
+        37: aastore
+        38: dup
+        39: iconst_1
+        40: ldc           #20                 // String two
+        42: aastore
+        43: dup
+        44: iconst_2
+        45: ldc           #21                 // String three
+        47: aastore
+        48: invokestatic  #17                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+        51: astore_2
+        52: aload_1
+        53: invokestatic  #22                 // Method printList:(Ljava/util/List;)V
+        56: aload_2
+        57: invokestatic  #22                 // Method printList:(Ljava/util/List;)V
+        60: return
+      LineNumberTable:
+        line 27: 0
+        line 28: 29
+        line 29: 52
+        line 30: 56
+        line 31: 60
+}
+SourceFile: "UnBound.java"
