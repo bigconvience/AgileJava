@@ -1,0 +1,54 @@
+Classfile /Users/jiangbenpeng/Documents/demos/java_note/src/generic/simple_box/Test.class
+  Last modified Feb 19, 2016; size 488 bytes
+  MD5 checksum ef418f674b51f8639f6081d624846486
+  Compiled from "Test.java"
+public class generic.simple_box.Test
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #9.#17         // java/lang/Object."<init>":()V
+   #2 = Class              #18            // generic/simple_box/Box
+   #3 = Methodref          #2.#17         // generic/simple_box/Box."<init>":()V
+   #4 = Methodref          #19.#20        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #5 = Methodref          #2.#21         // generic/simple_box/Box.set:(Ljava/lang/Object;)V
+   #6 = Methodref          #2.#22         // generic/simple_box/Box.get:()Ljava/lang/Object;
+   #7 = Class              #23            // java/lang/String
+   #8 = Class              #24            // generic/simple_box/Test
+   #9 = Class              #25            // java/lang/Object
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = Utf8               Code
+  #13 = Utf8               LineNumberTable
+  #14 = Utf8               testBox
+  #15 = Utf8               SourceFile
+  #16 = Utf8               Test.java
+  #17 = NameAndType        #10:#11        // "<init>":()V
+  #18 = Utf8               generic/simple_box/Box
+  #19 = Class              #26            // java/lang/Integer
+  #20 = NameAndType        #27:#28        // valueOf:(I)Ljava/lang/Integer;
+  #21 = NameAndType        #29:#30        // set:(Ljava/lang/Object;)V
+  #22 = NameAndType        #31:#32        // get:()Ljava/lang/Object;
+  #23 = Utf8               java/lang/String
+  #24 = Utf8               generic/simple_box/Test
+  #25 = Utf8               java/lang/Object
+  #26 = Utf8               java/lang/Integer
+  #27 = Utf8               valueOf
+  #28 = Utf8               (I)Ljava/lang/Integer;
+  #29 = Utf8               set
+  #30 = Utf8               (Ljava/lang/Object;)V
+  #31 = Utf8               get
+  #32 = Utf8               ()Ljava/lang/Object;
+{
+  public generic.simple_box.Test();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 9: 0
+}
+SourceFile: "Test.java"
