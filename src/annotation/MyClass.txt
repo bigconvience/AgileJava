@@ -1,0 +1,47 @@
+Classfile /Users/jiangbenpeng/Documents/demos/java_note/src/annotation/MyClass.class
+  Last modified Mar 3, 2016; size 360 bytes
+  MD5 checksum fd1ad4d03a8460f347a4cf2703bd2c8f
+  Compiled from "MyClass.java"
+public class annotation.MyClass
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #3.#21         // java/lang/Object."<init>":()V
+   #2 = Class              #22            // annotation/MyClass
+   #3 = Class              #23            // java/lang/Object
+   #4 = Utf8               <init>
+   #5 = Utf8               ()V
+   #6 = Utf8               Code
+   #7 = Utf8               LineNumberTable
+   #8 = Utf8               SourceFile
+   #9 = Utf8               MyClass.java
+  #10 = Utf8               RuntimeInvisibleAnnotations
+  #11 = Utf8               Lannotation/MyAnnotation;
+  #12 = Utf8               name
+  #13 = Utf8               James
+  #14 = Utf8               value
+  #15 = Utf8               KKK
+  #16 = Utf8               age
+  #17 = Integer            30
+  #18 = Utf8               newNames
+  #19 = Utf8               Big
+  #20 = Utf8               Jiang
+  #21 = NameAndType        #4:#5          // "<init>":()V
+  #22 = Utf8               annotation/MyClass
+  #23 = Utf8               java/lang/Object
+{
+  public annotation.MyClass();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 15: 0
+}
+SourceFile: "MyClass.java"
+RuntimeInvisibleAnnotations:
+  0: #11(#12=s#13,#14=s#15,#16=I#17,#18=[s#19,s#20])
