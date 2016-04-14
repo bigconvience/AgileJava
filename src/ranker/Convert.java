@@ -1,7 +1,7 @@
 package ranker;
 
+
 import java.math.BigInteger;
-import java.util.BitSet;
 import java.util.Scanner;
 
 /**
@@ -16,51 +16,50 @@ public class Convert {
         Scanner stdin = new Scanner(System.in);
 
         int N = stdin.nextInt();
-
-        byte[] a = {1, 2};
-        BigInteger bigInteger = new BigInteger(a);
-        System.out.println(bigInteger.toString());
+        stdin.nextLine();
+        for (int i = 0; i < N; i++) {
+            parseLine(stdin);
+        }
         stdin.close();
     }
 
+    private static void parseLine(Scanner stdin) {
+        String l1 = stdin.nextLine();
+        String l2 = stdin.nextLine();
 
-    private static void factory(int n) {
-        BigInteger bigInteger = new BigInteger(String.valueOf(1));
-        for (int i = 2; i <= n; i++) {
-            bigInteger = bigInteger.multiply(new BigInteger(String.valueOf(i)));
+        String[] l11 = l1.split(" ");
+        BigInteger B = new BigInteger(l11[0]);
+        BigInteger W = new BigInteger(l11[1]);
+
+        String[] l21 = l2.split(" ");
+        BigInteger X = new BigInteger(l21[0]);
+        BigInteger Y = new BigInteger(l21[1]);
+        BigInteger Z = new BigInteger((l21[2]));
+
+        BigInteger result;
+
+        BigInteger small, big;
+        BigInteger small_count, big_count;
+
+        if (X.compareTo(Y) < 0) {
+            small = X;
+            small_count = B;
+            big = Y;
+            big_count = W;
+        } else {
+            small = Y;
+            small_count = W;
+            big = X;
+            big_count = B;
         }
-        System.out.println(bigInteger);
+
+        if (small.add(Z).compareTo(big) >= 0) {
+            result = small.multiply(small_count).add(big.multiply(big_count));
+        } else {
+            result = small.multiply(small_count.add(big_count)).add(big_count.multiply(Z));
+        }
+
+        System.out.println(result.toString());
     }
 
-
-    public static void compare(BitSet[] bitSets, int n, int t) {
-        int max = 0;
-        int group = 0;
-
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = i + 1; j < n; j++) {
-                BitSet result = (BitSet) bitSets[i].clone();
-                result.or(bitSets[j]);
-                int sameCount = getBitSet1Count(result, t);
-                if (sameCount == max) {
-                    group++;
-                } else if (sameCount > max) {
-                    max = sameCount;
-                    group = 1;
-                }
-            }
-        }
-        System.out.println(max);
-        System.out.println(group);
-    }
-
-    public static int getBitSet1Count(BitSet bitset, int size) {
-        int count = 0;
-        for (int i = 0; i < size; i++) {
-            if (bitset.get(i)) {
-                count++;
-            }
-        }
-        return count;
-    }
 }
