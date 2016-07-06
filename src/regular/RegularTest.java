@@ -64,6 +64,12 @@ public class RegularTest {
         }
 
         testPoint();
+
+        String url = "adghttps://github.com/google/guava/wiki/CachesExplained";
+        String url1 = "http://ued.xiami.net/grammy/prototypes/pro9.1/#p=帖子支持外链跳转";
+
+        testUrl(url);
+        testUrl(url1);
     }
 
 
@@ -82,5 +88,17 @@ public class RegularTest {
         }
         matcher.appendTail(sb);
         System.out.println(sb.toString());
+    }
+
+    private static void testUrl(String url) {
+       // Pattern p = Pattern.compile("(http[s]{0,1}://)?[a-zA-Z_0-9\\-]+(\\.\\w[a-zA-Z_0-9\\-]+)+(/[#&\\n\\-=?\\+\\%/\\.\\w]+)?");
+        Pattern p = Pattern.compile("((http[s]{0,1})://[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)");
+        Matcher matcher = p.matcher(url);
+
+        while(matcher.find()) {
+            //out: appid, joy
+            System.out.println(matcher.group());
+        }
+
     }
 }
