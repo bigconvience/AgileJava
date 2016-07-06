@@ -16,7 +16,7 @@ import com.google.common.cache.LoadingCache;
  * @author benpeng.jiang
  * @version 1.0.0
  */
-public class GuavaTester {
+public class GuavaCacheTester {
     public static void main(String args[]) {
 
         //create a cache for employees based on their employee id
