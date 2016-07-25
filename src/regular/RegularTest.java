@@ -65,11 +65,15 @@ public class RegularTest {
 
         testPoint();
 
-        String url = "fdahttp://www.baidu.com/fadg https://github.com/google/guava/wiki/CachesExplained";
+        String url = "fdawww.baidu.com/fadg https://github.com/google/guava/wiki/CachesExplained";
         String url1 = "fdashttp://ued.xiami.net/grammy/prototypes/pro9.1/#p=帖子支持外链跳转";
+        String url2 = "fdashttp://ued.xiami.net/grammy/prototypes/pro9.1/?q=fdswofd我的";
+        String url3 = "Choked http://www.baidu.com/?a=1";
 
         testUrl(url);
         testUrl(url1);
+        testUrl(url2);
+        testUrl(url3);
     }
 
 
@@ -96,7 +100,7 @@ public class RegularTest {
 
     private static void testUrl(String input) {
        // Pattern p = Pattern.compile("(http[s]{0,1}://)?[a-zA-Z_0-9\\-]+(\\.\\w[a-zA-Z_0-9\\-]+)+(/[#&\\n\\-=?\\+\\%/\\.\\w]+)?");
-        Pattern p = Pattern.compile("((http[s]{0,1})://[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)");
+        Pattern p = Pattern.compile("(((http[s]{0,1})://)?[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)");
         Matcher matcher = p.matcher(input);
 
         StringBuffer sb = new StringBuffer();
