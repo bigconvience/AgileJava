@@ -1,4 +1,5 @@
 // $Id$
+package nio;
 
 import java.io.*;
 import java.nio.*;
@@ -17,6 +18,7 @@ public class UseMappedFile
       start, size );
 
     mbb.put( 0, (byte)97 );
+    mbb.put( 5, (byte)98 );
     mbb.put( 1023, (byte)122 );
 
     raf.close();
