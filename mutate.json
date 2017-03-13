@@ -1,0 +1,230 @@
+{
+  "api": "mtop.alimusic.fans.fancommunityservice.gethomepagehometab",
+  "data": {
+    "data": {
+      "fansWeeklyRanksVO": {
+        "fans": [
+          {
+            "expBarHighEnd": 30000,
+            "expBarLowEnd": 13001,
+            "experience": 19104,
+            "fanCommunityUserIdentity": 3,
+            "fanCommunityUserIdentityName": "圈主",
+            "fandomId": 4024,
+            "fuels": 5,
+            "gender": 0,
+            "headPicUrl": "http://img.xiami.net/xxx.png",
+            "isBlack": false,
+            "isJoin": true,
+            "isShutup": false,
+            "isSignIn": false,
+            "lastSignInDate": 0,
+            "level": 11,
+            "levelTitle": "流浪行星",
+            "managerGroup": {
+              "managerGroupId": 44,
+              "managerGroupMaxCount": 8,
+              "managerGroupName": "圈主",
+              "managerGroupUrl": "https://gw.alicdn.com/tps/TB1gS2jKVXXXXb4XpXXXXXXXXXX-36-36.png"
+            },
+            "medals": [
+              {
+                "iconUrl": "http://pic.xiami.net/images/trade/catg_banner/0/5710dc193aaa2_0_1460722713.png",
+                "itemKey": "",
+                "title": "流浪行星",
+                "type": 1
+              }
+            ],
+            "nickName": "张三",
+            "ownerApplicationStatus": 1,
+            "popularity": 2876,
+            "rank": 1,
+            "signInDays": 0,
+            "userId": 600000928,
+            "userIdentity": 0
+          },
+          {
+            "expBarHighEnd": 30000,
+            "expBarLowEnd": 13001,
+            "experience": 18920,
+            "fanCommunityUserIdentity": 3,
+            "fanCommunityUserIdentityName": "圈主",
+            "fandomId": 4024,
+            "fuels": 35,
+            "gender": 0,
+            "headPicUrl": "http://pic.xiami.net/images/trade/user_avatar/112/576b9f8858033_5643457_1466670984.jpg",
+            "isBlack": false,
+            "isJoin": true,
+            "isShutup": false,
+            "isSignIn": true,
+            "lastSignInDate": 0,
+            "level": 11,
+            "levelTitle": "流浪行星",
+            "managerGroup": {
+              "managerGroupId": 44,
+              "managerGroupMaxCount": 8,
+              "managerGroupName": "圈主",
+              "managerGroupUrl": "https://gw.alicdn.com/tps/TB1gS2jKVXXXXb4XpXXXXXXXXXX-36-36.png"
+            },
+            "medals": [
+              {
+                "iconUrl": "http://pic.xiami.net/images/trade/catg_banner/0/5710dc193aaa2_0_1460722713.png",
+                "itemKey": "",
+                "title": "流浪行星",
+                "type": 1
+              }
+            ],
+            "nickName": "sqq GHG",
+            "ownerApplicationStatus": 2,
+            "popularity": 1280,
+            "rank": 2,
+            "signInDays": 0,
+            "userId": 600001026,
+            "userIdentity": 0
+          },
+          {
+            "expBarHighEnd": 3000,
+            "expBarLowEnd": 1501,
+            "experience": 2725,
+            "fanCommunityUserIdentity": 3,
+            "fanCommunityUserIdentityName": "圈主",
+            "fandomId": 4024,
+            "fuels": 10,
+            "gender": 0,
+            "headPicUrl": "http://pic.xiami.net/images/trade/user_avatar/0/571de4062bf52_0_1461576710.jpg",
+            "isBlack": false,
+            "isJoin": true,
+            "isShutup": false,
+            "isSignIn": false,
+            "lastSignInDate": 0,
+            "level": 8,
+            "levelTitle": "海王星",
+            "managerGroup": {
+              "managerGroupId": 44,
+              "managerGroupMaxCount": 8,
+              "managerGroupName": "圈主",
+              "managerGroupUrl": "https://gw.alicdn.com/tps/TB1gS2jKVXXXXb4XpXXXXXXXXXX-36-36.png"
+            },
+            "medals": [
+              {
+                "iconUrl": "http://pic.xiami.net/images/trade/catg_banner/0/5710dc193aaa2_0_1460722713.png",
+                "itemKey": "",
+                "title": "海王星",
+                "type": 1
+              }
+            ],
+            "nickName": "再测试",
+            "ownerApplicationStatus": 2,
+            "popularity": 1187,
+            "rank": 3,
+            "signInDays": 0,
+            "userId": 600000929,
+            "userIdentity": 0
+          },
+          {
+            "expBarHighEnd": 60000,
+            "expBarLowEnd": 30001,
+            "experience": 32139,
+            "fanCommunityUserIdentity": 5,
+            "fanCommunityUserIdentityName": "",
+            "fandomId": 4024,
+            "fuels": 0,
+            "gender": 0,
+            "headPicUrl": "http://pic.xiami.net/images/common/default_avatar.png",
+            "isBlack": false,
+            "isJoin": true,
+            "isShutup": false,
+            "isSignIn": false,
+            "lastSignInDate": 0,
+            "level": 12,
+            "levelTitle": "寄生母星",
+            "managerGroup": {
+              "managerGroupId": 0,
+              "managerGroupMaxCount": 0,
+              "managerGroupName": "",
+              "managerGroupUrl": ""
+            },
+            "medals": [
+              {
+                "iconUrl": "http://pic.xiami.net/images/trade/catg_banner/0/5710dc193aaa2_0_1460722713.png",
+                "itemKey": "",
+                "title": "寄生母星",
+                "type": 1
+              }
+            ],
+            "nickName": "abutterflyb's company",
+            "ownerApplicationStatus": 0,
+            "popularity": 1000,
+            "rank": 4,
+            "signInDays": 0,
+            "userId": 600000716,
+            "userIdentity": 0
+          }
+        ],
+        "paging": {
+          "count": 0,
+          "page": 0,
+          "pageSize": 0,
+          "pages": 0
+        },
+        "schemaUrl": "alimusic:///page/fans_contribution_leaderboard?id=4024",
+        "week": 35
+      },
+      "fanCommunityHomeStickEssentialPostVO": {
+        "count": 12,
+        "schemaUrl": "alimusic:///page/fans_essence_post_list?fandomId=4024"
+      },
+      "fanCommunityHomeTabNavListVO": {
+        "fanCommunityHomeTabNavVOs": [
+          {
+            "name": "任务",
+            "picUrl": "https://gw.alicdn.com/tps/TB1X6feLpXXXXalXFXXXXXXXXXX-64-64.png",
+            "schemaUrl": "alimusic:///page/page_fans_fandom_tasks_center?id=4024&amp;fandomName=林允儿&amp;tab=0",
+            "bubble": "30"
+          },
+          {
+            "name": "行程",
+            "picUrl": "https://gw.alicdn.com/tps/TB1QxK9LpXXXXbKXVXXXXXXXXXX-64-64.png",
+            "schemaUrl": "alimusic:///page/fans_tour_center?id=4024&amp;title=林允儿",
+            "bubble": "NEW"
+          },
+          {
+            "name": "积分众筹",
+            "picUrl": "https://gw.alicdn.com/tps/TB1oFYbJVXXXXaFaXXXXXXXXXXX-64-64.png",
+            "schemaUrl": "http://h.waptest.dongting.com/yule/app/fans_points_fandom_crowdfunding_list.html?fandom=163141",
+            "bubble": "NEW"
+          },
+          {
+            "name": "音乐",
+            "picUrl": "https://gw.alicdn.com/tps/TB1dPBOJFXXXXcaaXXXXXXXXXXX-64-64.png",
+            "schemaUrl": "alimusic:///page/music_singer?id=100000&amp;tab=song"
+          }
+        ]
+      },
+      "fanCommunityPromotionVO": {
+        "promotionCommendVOs": [
+          {
+            "isHot": false,
+            "picUrl": "http://pic.xiami.net/images/ams/search_op/0/5719d5af29c76_0_1461310895.png",
+            "schemeUrl": "http://www.sina.com",
+            "title": "Batman VS Superman    Batman VS Superman"
+          },
+          {
+            "isHot": false,
+            "picUrl": "http://pic.xiami.net/images/ams/search_op/0/5719d73b2784c_0_1461311291.png",
+            "schemeUrl": "http://www.baidu.com",
+            "title": "ウルトラセブン　ウルトラマン　ウルトラマンエズ　ウルトラマン80"
+          }
+        ]
+      }
+    },
+    "header": {
+      "traceId": "6451b9d514721300721932635d6169",
+      "version": 1
+    }
+  },
+  "ret": [
+    "SUCCESS::调用成功"
+  ],
+  "v": "1.0"
+}
