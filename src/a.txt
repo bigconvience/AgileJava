@@ -1,0 +1,23 @@
+Compiled from "Loop.java"
+final class syntax.Loop$Color extends java.lang.Enum<syntax.Loop$Color> {
+  public static final syntax.Loop$Color RED;
+  public static final syntax.Loop$Color GREEN;
+  public static final syntax.Loop$Color BLUE;
+  private int r;
+  private int g;
+  private int b;
+  private static final syntax.Loop$Color[] $VALUES;
+  public static syntax.Loop$Color[] values();
+  public static syntax.Loop$Color valueOf(java.lang.String);
+  private syntax.Loop$Color(int, int, int);
+  public int getR();
+  public int getG();
+  public int getB();
+  static {};
+}
+Compiled from "Loop.java"
+public class syntax.Loop {
+  public syntax.Loop();
+  public static void main(java.lang.String[]);
+  public static void drawLine(java.util.Set<syntax.Loop$Color>);
+}
