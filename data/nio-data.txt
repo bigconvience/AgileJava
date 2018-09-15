@@ -13,7 +13,3 @@
 6. [RednaxelaFX](https://link.zhihu.com/?target=http%3A//www.valleytalk.org/wp-content/uploads/2011/05/Java_Program_in_Action_20110727.pdf)
 7. [Java Virtual Machine Online Instruction Reference](http://cs.au.dk/~mis/dOvs/jvmspec/ref-Java.html)
 8. [The Java HotSpot Performance Engine Architecture](http://www.oracle.com/technetwork/java/whitepaper-135217.html)
-
-### Java NIO
-1. [Java NIO](http://tutorials.jenkov.com/java-nio/index.html)
-2. [【Java】从BIO、NIO到Linux下的IO多路复用](https://github.com/justtreee/blog/issues/17)

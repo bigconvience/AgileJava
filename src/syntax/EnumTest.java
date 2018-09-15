@@ -9,7 +9,7 @@ import java.util.Set;
  * @author benpeng.jiang
  * @version 1.0.0
  */
-public class Loop {
+public class EnumTest {
     private enum Color {
         RED(255, 0, 0), GREEN(0, 255, 0), BLUE(0, 0, 255);
         private int r;
